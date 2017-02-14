@@ -1,0 +1,163 @@
+@import "../pcss/utils.pcss";
+
+
+.MainView{
+	background-color: #fff;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+	.main-header{
+		height: 72px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+		position: relative;
+		z-index: 2;
+
+		.header-left{
+			font-size: 26px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			.icon{
+				margin: 0 32px;
+			}
+			.logo{
+				color: #000036;
+				margin-left:8px;
+			}
+		}
+
+		.header-center{
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			color: $txt;
+			.icon{
+				margin-right: 8px;
+			}
+			.action{
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		.header-right{
+			display: flex;
+			align-items: center;
+			.item{
+				margin-right: 16px;
+				display: flex;
+				align-items: center;
+				.arrow-icon{
+					margin-left: 8px;
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+
+	.main-content{
+		position: relative;
+		z-index: 1;
+		flex: 1;
+		display: flex;
+		background: #f8f8f8;
+
+		.menu{
+			width: 80px;
+			background: #081a49;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			.menu-item{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				height: 72px;
+				margin-bottom: 2px;
+				background: #0f2b60;
+
+				&.active{
+					background: #2869b4;
+				}
+
+				a{
+					height: 72px;
+					display: flex;
+					flex-flow: column;
+					align-items: center;
+					justify-content: center;
+					text-decoration: none;
+					color: #fff;
+					outline: none;
+					text-align: center;
+					.icon{
+						background: #fff;
+						margin: 4px 0;
+					}
+				}
+
+			}
+		}
+
+		.content-ctn{
+			display: flex;
+			flex: 1;
+			background: #f9f9f9;
+			.sub-header{
+				height: 40px;
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				border-bottom: 1px solid $bdr;
+				margin: 0 16px;
+				.sub-menu{
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					.sub-menu-item{
+						display: flex;
+						align-items: center;
+						margin: 0 16px;
+						height: 100%;
+						margin-top: 1px;
+						a{
+							color: $txt;
+							outline: none;
+							text-align: center;
+							text-decoration: none;
+							font-size: 13px;
+						}
+						&.active{
+							border-bottom: 2px solid #004d86;
+							a{
+								color: #004d86;
+							}
+						}
+					}
+				}
+				.right-menu{
+					display: flex;
+					align-items: center;
+					.tenant-info{
+						font-size: 12px;
+						color: #62a6e3;
+					}
+					.icon{
+						width: 16px;
+						height: 16px;
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+	}
+}
