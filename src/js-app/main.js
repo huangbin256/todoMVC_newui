@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// first make sure we empty eventual body (this should never happen in this event, but as a best practices)
 	d.empty(bodyEl);
 	// then add this new MainView
-	d.display("MainView", bodyEl);
+	d.display("Dashboard", bodyEl);
 
 	// initialize the routing
 	route.init();

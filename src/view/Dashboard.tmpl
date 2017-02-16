@@ -1,0 +1,306 @@
+<script id="Dashboard" type="text/html">
+	<div class="Dashboard">
+		<header class="main-header">
+			<div class="header-left">
+				<div class="icon"></div>
+				<div class="logo">ISONAS</div>
+			</div>
+			<div class="header-center">
+				<div class="action">
+					<span class="icon"></span>
+					<span>Update Access Points</span>
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="item">
+					<span class="icon"></span>
+				</div>
+				<div class="item">
+					<span class="icon"></span>
+				</div>
+				<div class="item user-info">
+					<span class="icon user-icon">
+					</span>
+					<span class="icon arrow-icon"></span>
+				</div>
+			</div>
+		</header>
+		<section class="main-content">
+			<ul class="menu">
+				<li class="menu-item active">
+					<a tabindex="-1" data-nav="dashboard" href="#dashboard">
+						<span class="icon"></span>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a tabindex="-1" data-nav="users" href="#users">
+						<span class="icon"></span>
+						<span>Users</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a tabindex="-1" data-nav="accesscontrol" href="#accesscontrol">
+						<span class="icon"></span>
+						<span>Access Control</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a tabindex="-1" data-nav="reports" href="#reports">
+						<span class="icon"></span>
+						<span>Reports</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a tabindex="-1" data-nav="settings" href="#settings">
+						<span class="icon"></span>
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a tabindex="-1" data-nav="alerts" href="#alerts">
+						<span class="icon"></span>
+						<span>Alerts</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content-ctn">
+				<div class="sub-header">
+					<ul class="sub-menu">
+						<li class="sub-menu-item active">
+							<a tabindex="-1" data-nav="rules" href="#rules">
+								<span>CALIFORNIA</span>
+							</a>
+						</li>
+						<li class="sub-menu-item">
+							<a tabindex="-1" data-nav="accesspoints" href="#accesspoints">
+								<span>NEW YORK</span>
+							</a>
+						</li>
+						<li class="sub-menu-item">
+							<a tabindex="-1" data-nav="lists" href="#lists">
+								<span>HOUSTON</span>
+							</a>
+						</li>
+						<li class="sub-menu-item">
+							<a tabindex="-1" data-nav="buildings" href="#buildings">
+								<span>DASHBORD FOUR</span>
+							</a>
+						</li>
+					</ul>
+					<div class="right-menu">
+						<span class="tenant-info">Brite Snow</span>
+						<span class="icon"></span>
+					</div>
+				</div>
+				<div class="main-ctn">
+					<div class="ctn-header">
+						<div class="left-menu">
+							<div class="title">California</div>
+							<span class="title-label">Dashboard</span>
+							<span class="icon" />
+						</div>
+						<div class="right-menu">
+							<span class="icon"></span>
+							<span class="btn btn-building-add">
+								<span>+  Dashboard</span>
+							</span>
+						</div>
+					</div>
+					<div class="ctn-content">
+						<div class="panel-ctn">
+							<div class="panel user-profile">
+								<div class="panel-header">
+									<div class="top-header">
+										<div class="title">USER PROFILE</div>
+										<div class="setting icon"></div>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="col event-col">
+										<div class="event-con">
+											<div class="label">EVENT</div>
+											<div class="event">
+												<div class="icon"></div>
+												<div class="event-value value">Admit</div>
+											</div>
+										</div>
+									</div>
+									<div class="col ap-col">
+										<div class="profile"></div>
+										<div class="user-name">Ali, Gabe</div>
+										<div class="accesspoint-con">
+											<div class="label">ACCESS POINT</div>
+											<div class="accesspoint-name value">Eash Dock</div>
+										</div>
+										<div class="datetime-con">
+											<div class="date value">01-11-2017</div>
+											<div class="time value">01:36:58 MST</div>
+										</div>
+									</div>
+									<div class="col badge-col">
+										<div class="badge-con">
+											<div class="label">BADGE</div>
+											<div class="badge value">355565565</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel lockdown">
+								<div class="panel-header">
+									<div class="top-header">
+										<div class="title">LOCK DOWN</div>
+										<div class="setting icon"></div>
+									</div>
+									<div class="bottom-header">
+										<div class="switch">
+											<div class="item active">
+												<div class="icon"></div>
+												<div class="label">Lock Down</div>
+											</div>
+											<div class="item">
+												<div class="icon"></div>
+												<div class="label">Reset</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="btn-all">All Access Points</div>
+								</div>
+							</div>
+							<div class="panel multi-ap">
+								<div class="panel-header">
+									<div class="top-header">
+										<div class="title">ACTIVE ACCESS POINTS</div>
+										<div class="setting icon"></div>
+									</div>
+									<div class="bottom-header">
+										To <span class="bold">Admit</span>, <span class="bold">Lock</span>, <span class="bold">Unlock</span> or <span class="bold">Lock Down</span>,<br/>
+										first select the access points below.
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="accesspoints-con">
+										<div class="row">
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+											<div class="ap-item">
+												<div class="name">East Dock</div>
+												<div class="bottom-info">
+													<div class="icon"></div>
+													<div class="time">01:36&nbsp;MST</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="history-ctn">
+							<div class="table">
+								<div class="thead">
+									<div class="right-btns">
+										<div class="icon"></div>
+										<div class="icon"></div>
+									</div>
+									<div class="tr">
+										<div class="td accesspoint">ACCESS POINT</div>
+										<div class="td utc">UTC TIME</div>
+										<div class="td local">LOCAL TIME</div>
+										<div class="td event">EVENT</div>
+										<div class="td badge">BADGE</div>
+										<div class="td name">NAME</div>
+									</div>
+								</div>
+								<div class="tbody">
+									<div class="tr">
+										<div class="td accesspoint">Traning Room</div>
+										<div class="td utc">
+											<div class="date">01-11-2017</div>
+											<div class="time">01:36:58 MST</div>
+										</div>
+										<div class="td local">
+											<div class="date">01-11-2017</div>
+											<div class="time">01:36:58 MST</div>
+										</div>
+										<div class="td event">
+											<div class="icon"></div>
+											<div class="event-name">Lock</div>
+										</div>
+										<div class="td badge">
+											<div class="icon"></div>
+											<div class="badge-value">355565644</div>
+										</div>
+										<div class="td name">
+											<div class="icon"></div>
+											<div class="user-name">Pitt, Brad</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</script>
